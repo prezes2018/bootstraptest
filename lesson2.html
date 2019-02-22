@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 2</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+.table-responsive-md
+{
+	display: table;
+	width: 1000px;
+}	
+	
+</style>
+	
+</head>
+<body>
+
+<div class="table-responsive-md">
+	<table class="table table-dark table-hover table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Pozycja</th>
+				<th>Imię</th>
+				<th>Nazwisko</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Jan</td>
+				<td>Kowalski</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Piotr</td>
+				<td>Malajka</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Erwin</td>
+				<td>Groteskowy</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 
+//tabele
+.table + .table-dark- definiuje podstawowy styl tabeli .table-dark dodaje ciemny kolor 
+.thead-dark, thead-light - dodajemy do nagłówków dla wyróżneinia
+.thead-inverse - ciemny nagłówek
+.table-striped - zmiana koloru co drugiego wiersza (dodajemy do znacznika <table>)
+.table-bordered - ramki wokol komorek (w <table>)
+.table-hover - podswietlenie elementu po najechaniu na niego (w <table>)
+.table-sm - usuniecie odstepow miedzy rzedami tak aby tabela zajmowala mniej miejsca (w <table>)
+
+//z klasa .table
+.table-active – nadaje tło jak przy najechaniu kursorem przy użyciu klasy .table-hover (w <tr>)
+.table-success – nadaje zielone tło i oznacza, sukces, wzrost, pozytywny komunikat (w <tr>)
+.table-info – nadaje niebieskie tło i oznacza element, który ma wartość informacyjną (w <tr>)
+.table-warning – nadaje żółte tło i oznacza ostrzeżenie (w <tr>)
+.table-danger – nadaje czerwone tło i oznacza zagrożenie (np. przyciski „delete” są zwykle czerwone) (w <tr>)
+
+// z klasą .table-dark
+.bg-primary
+.bg-success
+.bg-info
+.bg-warning
+.bg-danger
+
+//responsywność
+.table-responsive - tworzymy dodatkowego div'a do tabeli
+.table-responsive-* - dla różnych rozdzielczości
+
+ -->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
