@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap - lekcja 3</title>
+
+	<!--Bootstrap links-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style type="text/css">
+
+	
+</style>
+	
+</head>
+<body>
+
+<!-- <div class="alert alert-primary" role="alert">Primary alert</div>
+<div class="alert alert-secondary" role="alert">secondary alert</div>
+<div class="alert alert-success" role="alert">success alert</div>
+<div class="alert alert-danger" role="alert">danger alert</div>
+<div class="alert alert-warning" role="alert">warning alert</div>
+<div class="alert alert-info" role="alert">info alert with link to interia.pl <a href="https://www.interia.pl" class="alert-link">Interia<a></div>
+<div class="alert alert-light" role="alert">light alert</div>
+<div class="alert alert-dark" role="alert">dark alert</div> -->
+
+<div class="container">
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <h4 class="alert-heading">Alert</h4>
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <button type="buton" class="close" data-dismiss="alert" aria-label="Close">
+  	<span aria-label="hidden">&times;</span>
+  </button>
+</div>
+
+<div>
+	<h2>Badges</h2>
+	<p>
+		<button class="btn btn-primary">Wiadomości <span class="badge badge-danger">4</span></button>
+		<button class="btn btn-info">Wiadomości <span class="badge badge-pill badge-success">4</span></button>
+		<a href="#" class="badge badge-success">Kliknij tutaj</a>
+	</p>
+</div>
+
+<div>
+	<h2>Okruszki</h2>
+	<nav class="breadcrumb">
+	  <a class="breadcrumb-item" href="#">Home</a>
+	  <a class="breadcrumb-item" href="#">Library</a>
+	  <a class="breadcrumb-item" href="#">Data</a>
+	  <span class="breadcrumb-item active">Bootstrap</span>
+	</nav>
+</div>
+
+<div>
+	<h2>Przyciski</h2>
+	<button class="btn btn-primary mb-1">Nadajemy klasę .btn + btn-* (primary itd)</button>
+	<button class="btn btn-secondary mb-1">btn-secondary</button><br>
+	<a href="#" class="btn btn-warning mb-1" role="button">Do linku dodajemy atrybut role z wartością button</a><br>
+	<input type="submit" class="btn btn-info mb-1" value="btn btn-info"><br>
+	<button type="button" class="btn btn-outline-dark mb-1">btn btn-outline</button><br>
+	<button type="button" class="btn btn-danger btn-lg mb-1">button większy btn-lg</button>
+	<button type="button" class="btn btn-info mb-1">button standardowy</button>
+	<button type="button" class="btn btn-success btn-sm mb-1">button mniejszy btn-sm</button><br>
+	<button type="button" class="btn btn-success btn-block mb-1">button o szerokości całego elementu btn-block</button><br>
+	<a href="#" type="button" class="btn btn-secondary active mb-1" role="button" aria-pressed='true' >button aktywny (wciśnięty) + aria-pressed='true'</a><br>
+	<a href="#" class="btn btn-primary disabled" role="button">Wyłączony button w tagu &lt;a&gt;</a>
+	<button class="btn btn-primary" disabled="true"> Wyłączony button w elemencie button </button><br>
+</div>
+<br>
+<div class="btn-group btn-group-toggle" data-toggle='buttons'>
+	<h2>Checkboxy i radio</h2><br>
+	<label class="btn btn-primary active">
+			<input type="checkbox" checked autocomplete="off" name="">Checkobox 1
+	</label><br>
+	<label class="btn btn-secondary ml-1">
+		<input type="checkbox" autocomplete="off" name=""> Checkobox 2
+	</label><br>
+	<br>
+	<label class="btn btn-warning ml-1">
+		<input type="radio" autocomplete="off" name=""> Radio 1
+	</label><br>
+	<label class="btn btn-danger ml-1" >
+		<input type="radio" autocomplete="off" name=""> Radio 2
+	</label><br>
+</div><br>
+
+<div>
+	<h2>Grupy przycisków</h2>
+	<div class="btn-group role='group' ">
+	  <button class="btn btn-secondary" type="button">Lewy</button> 
+	  <button class="btn btn-secondary" type="button">Środkowy</button> 
+	  <button class="btn btn-secondary" type="button">Prawy</button>
+	</div>
+
+	<div class="btn-toolbar" role="toolbar" aria-label="Pasek narzędzi">
+	  <div class="btn-group mr-2" role="group" aria-label="Druga grupa">
+	    <button type="button" class="btn btn-secondary">Wstaw</button>
+	    <button type="button" class="btn btn-secondary">Format</button>
+	    <button type="button" class="btn btn-secondary">Narzędzia</button>
+	  </div>
+	  <div class="btn-group mr-2" role="group" aria-label="Trzecia grupa">
+	    <button type="button" class="btn btn-success"><i class="fa fa-floppy-o fa-lg"></i> Zapisz</button>
+	    <button type="button" class="btn btn-danger"><i class="fa fa-trash-o fa-lg"></i> Usuń</button>
+	  </div>
+	</div>
+</div>
+
+<div>
+	<h2>Buttony z rozwijaną listą</h2>
+	<div class="btn-group" role="group" aria-label="Grupa przycisków z listą">
+		<button class="btn btn-warning">HOME</button>
+		<button class="btn btn-outline-dark">cos innego</button>
+
+		<div class="btn-group" role="group"> 
+			<button id="btnDrop" type="button" class="btn btn-secondary dropdown-toggle" data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+				Rozwijana lista
+			</button>
+			<div class="dropdown-menu" aria-labelledby='btnDrop'>
+				<a class="dropdown-item" href="#">1</a>
+				<a class="dropdown-item" href="#">2</a>
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="btn-group-vertical" role="group" aria-label="Grupa przycisków w pionie">
+		<div class="btn-group" role="button">		
+			<button id="btnPier" class="btn btn-primary dropdown-toggle mb-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">pierwszy</button>
+			<div class="dropdown-menu" aria-labelledby='btnPier'>
+				<button class="btn btn-secondary dropdown-item">Pod 1</button>
+				<button class="btn btn-secondary dropdown-item">Pod 2</button>
+			</div>	
+		</div>
+		<button class="btn btn-primary mb-1">drugi</button>
+		<button class="btn btn-primary mb-1">trzeci</button>
+		<button class="btn btn-primary mb-1">czwarty</button>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+<!--
+//alert
+.alert - komunikat
+.alert-* - okreslony komunikat w odpowiednim kolorze (primary,secondary,success, danger, warning, info, light, dark) 
+.alert-link - link w alercie <a href='' class='alert-link'></a>
+.alert-heading - nagłówek alertu (pamietac aby zminieszyc dolny margines)
+.alert-dismissible - sprawia ze okno bedzie mialo mozliwosc wyłączenia
+.fade .show - powolne zamykanie alertu
+- dodatkowo trzeba do zamykania trzeba utworzyc button z atrybutem: 
+data-dismiss='alert'
+.close - klasa zamkniecia dodaje nam zamkniecie w prawym gornym rogu
+
+//odznaki czyli informacje przy tekstach np PROMOCJA
+.badge .badge-* - podstawowa klasa + primary,secondary,success, danger, warning, info, light, dark
+.badge-pill - dodanie zaokraglen
+
+//okruszki czyli aktualnie wyswietlona strona
+.breadcrumb - klasa tworząca okruszki
+.breadcrumb-item - tworzy okruszek
+.active - aktualnie wyświetlana strona
+
+//buttons - przyciski 
+.btn .btn-* - podstawowa klasa + primary,secondary,success, danger, warning, info, light, dark
+.btn-outline-* - buton z ramką bez tła
+.btn-lg i .btn-sm - zwiększenie lub zmniejszenie rozmiaru buttona
+.btn-block - button o szerokości danego elementu
+.active - button aktywny lub wciśniety (dodac aria-pressed='true' dla czytników ekranowych)
+.disabled - wyłączamy pzrzycisk (jako klasa w tagu "a" jako atrybut w "button")
+//checkoboxy
+.btn-group .btn-group-toggle - tworzy wrapper (dodajemy do div btn-toggle pozwala zaznaczyc tylko jedna opcje)
+-tworzymy tag <label> i dodajemy klasy .btn oraz .btn-primary
+//grupy przyciskow
+.btn-group - grupujemy buttony
+.btn-group-vertical - układ pionowy buttonów
+.btn-group-lg .btn-group-sm - większe/mniejsze przyciski
+//rozwijana lista
+.dropdown-toggle - klasa odpowiedzialna za zmianę stanów widoczności + atrybut data-toggle='dropdown' 
+.dropdown-menu - tworzy listę z elementami buttona
+.dropdown-item - konkretne elementy listy
+
+
+
+-->
+ 
+<!--============================= JAVASCRIPT =======================-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- files js, jquery to bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
